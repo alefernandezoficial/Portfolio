@@ -1,0 +1,72 @@
+/* ContactForm.module.css */
+
+.containerContact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contacttitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.alert {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* ContactForm.module.css */
+
+.form {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilos para los elementos de formulario */
+.inputField {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.textarea {
+    height: 150px;
+}
+
+
+.button {
+    padding: 10px 80px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

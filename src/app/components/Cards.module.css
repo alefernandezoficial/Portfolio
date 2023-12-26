@@ -1,0 +1,69 @@
+/* Card.css */
+
+/* Cards.module.css */
+
+.card {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0055, #ff00aa, #00aaff, #00ffaa);
+    background-size: 400% 400%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.card:hover:before {
+    filter: blur(20px);
+    /* Efecto de desenfoque al pasar el cursor */
+    background-position: right bottom;
+}
+
+.imagecontainer {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.6s ease, opacity 0.10s ease 0.8s;
+    /* Añade una transición para la altura y la opacidad */
+}
+
+.imagecontainer img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    /* Oculta la imagen inicialmente */
+    transition: opacity 0.5s ease 0.2s;
+    /* Añade una transición para la opacidad */
+}
+
+.card:hover .imagecontainer {
+    height: 200px;
+}
+
+.card:hover .imagecontainer img {
+    opacity: 1;
+    /* Muestra la imagen al pasar el cursor */
+}
